@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyndryl</title>
+    <link rel="stylesheet" href="src/register.css">
+</head>
+<body>
+    <div id="navBar">
+        <div id="companyLogo">
+            <img src="images/Kyndryl_logo.png" alt="kyndryl" >
+        </div>
+        <div id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <div id="searchBar">
+            <form action="search.html" method="get" id="searchForm">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Search ...">
+                <button id="searchButton" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <form action="submit" method="post" class="register">
+        <fieldset>
+            <legend>Enter your registration details:</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required maxlength="20" minlength="2">
+            <br>
+            <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required maxlength="20" minlength="2">
+            <br>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required min="1900-01-01" max="2025-06-27">
+            <br>
+            <br>
+            <label for="genders">Gender:</label>
+            <select name="genders" id="genders">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-Binary">Non-Binary</option>
+                <option value="Prefer Not to Say">Prefer Not to Say</option>
+            </select>
+            <br>
+            <br>
+            <label for="password">Enter Password:</label>
+            <input id="pwd1" name="password" type="password" placeholder="Password" />
+            <br>
+            <br>
+            <label for="conf_password">Confirm Password:</label>
+            <input id="pwd2" name="conf_password" type="password" placeholder="Password" />
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+            <br>
+            <br>
+            <label for="subscribe">Click the checkbox to subscribe to our newsletter</label>
+            <input type="checkbox" name="subscribe" id="subscribe" value="Subscribe to our Newsletter"> 
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <!-- <footer class="footer">
+        <a class="backToTop" href="#navBar"> Back to top</a>
+       <div class="copyright">Copyright (c) 2025 Kyndryl Inc. All Rights Reserved.</div>
+    </footer> -->
+</body>
+</html>

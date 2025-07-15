@@ -1,0 +1,81 @@
+mitsubishi.css
+ 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+h1 {
+    font-size: x-large;
+    color: orangered;
+}
+ 
+h2 {
+    font-size: medium;
+    color: gray;
+}
+
+/* * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Navigation top bar */
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border-bottom: 2px solid #f2f1ee;
+}
+
+#companyLogo img {
+    width: 100px;
+    margin: 0 40px 0 0
+}
+
+#navigation ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li {
+    list-style-type: none;
+    padding: 2px;
+    margin: 0 20px;
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#navigation li a:hover {
+    border-bottom: 2px solid #6e6d6c;
+}
+
+#searchBar {
+    padding-left: 20px;
+}
+
+#searchInput {
+    padding: 0;
+    margin: 0;
+}
+
+#searchButton {
+    color: transparent;
+    background-color: transparent;
+    background-image: url("/images/search-icon-png.webp");
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
