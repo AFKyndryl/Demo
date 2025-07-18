@@ -9,3 +9,4 @@ def test_add_pass():
 def test_add_fail():
     result = add(6,1)
     assert result == 7
+    
